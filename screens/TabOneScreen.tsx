@@ -11,42 +11,54 @@ export default function TabOneScreen(props: any) {
       id: '1',
       img: 'samsung-galaxy-s9-xxl.jpg',
       title: 'Samsung Galaxy S9',
-      price: 15000,
-      unit: 1,
+      unit_price: 15000,
+      quantity: 1,
+      "description": "Multicolor Item",
+      "currency_id": "MX",
     },
     {
       id: '2',
       img: 'l6g6.jpg',
       title: 'LG G6',
-      price: 10000,
-      unit: 1,
+      unit_price: 10000,
+      quantity: 1,
+      "description": "Multicolor Item",
+      "currency_id": "MX",
     },
     {
       id: '3',
       img: 'u_10168742.jpg',
       title: 'iPhone 8',
-      price: 16000,
-      unit: 1,
+      unit_price: 16000,
+      quantity: 1,
+      "description": "Multicolor Item",
+      "currency_id": "MX",
     },
     {
       id: '4',
       img: 'motorola-moto-g5-plus-1.jpg',
       title: 'Motorola G5',
-      price: 9000,
-      unit: 1,
+      unit_price: 9000,
+      quantity: 1,
+      "description": "Multicolor Item",
+      "currency_id": "MX",
     },
     {
       id: '5',
       img: 'motorola-moto-g4-3.jpg',
       title: 'Moto G4',
-      price: 8000,
-      unit: 1,
+      unit_price: 8000,
+      quantity: 1,
+      "description": "Multicolor Item",
+      "currency_id": "MX",
     },
     {
       img: '003.jpg',
       title: 'Sony Xperia XZ2',
-      price: 10000,
-      unit: 1,
+      unit_price: 10000,
+      quantity: 1,
+      "description": "Multicolor Item",
+      "currency_id": "MX",
     }
   ]);
 
@@ -67,7 +79,7 @@ export default function TabOneScreen(props: any) {
         <CardItem >
           <Body style={{ alignItems: 'center', justifyContent: 'center' }}>
             <Text style={{ fontSize: 20 }}>{item.title}</Text>
-            <Text style={{ fontSize: 20 }}>${item.price}</Text>
+            <Text style={{ fontSize: 20 }}>${item.unit_price}</Text>
             <Button info onPress={() => goToDetail(item)}>
               <Text>Comprar</Text>
             </Button>
