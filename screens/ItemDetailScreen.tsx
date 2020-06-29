@@ -7,6 +7,8 @@ import * as WebBrowser from 'expo-web-browser';
 import Constants from 'expo-constants';
 import Axios from 'axios';
 
+//check https://docs.expo.io/versions/v38.0.0/sdk/webbrowser/#webbrowseropenbrowserasyncurl
+
 export default function ItemDetailScreen({ navigation, route }) {
   const { item } = route.params;
 
